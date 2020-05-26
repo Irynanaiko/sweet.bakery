@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:wght@400;900&display=swap');
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    --main color: black;
+}
+
+h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header .logo {
+    margin: 0;
+    font-family: 'Cookie', cursive;
+    font-size: 4rem;
+    color:  #A5366B;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+header nav .top-menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+header nav .top-menu li a {
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-decoration: none;
+    border-top: 2px solid transparent;
+    padding: 5px;
+}
+
+header nav .top-menu li a:hover {
+    border-top: 2px solid #A5366B;
+}
+
+header .cart{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width: 500px) {
+    header nav {
+        display: flex;
+    }
+    header nav .top-menu {
+        flex: 1;
+    }
+}

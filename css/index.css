@@ -14,6 +14,11 @@ body {
     max-width: 980px;
     margin: auto;
 }
+header .logo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 
 header .logo {
     margin: 0;
@@ -21,7 +26,7 @@ header .logo {
     font-size: 4rem;
     color:  #A5366B;
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
 
 header nav .top-menu {
@@ -73,7 +78,7 @@ header .container .wrapper {
 header .container .wrapper .title {
     font-family: 'Cookie', cursive;
     font-size: 48px;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     color:#A5366B;   
 }
 
@@ -87,7 +92,7 @@ header .container .wrapper .intro {
     margin-top: 20px;
 }
 
-header .container .wrapper .btn main{
+.offer a{
  color: #ffffff;
  background:#A5366B ;
  display: block;
@@ -96,7 +101,38 @@ header .container .wrapper .btn main{
  padding: 20px 0;
  text-align: center;
  text-decoration: none; 
+ font-weight: 900;
+ margin-top: 20px;
+ transition: all 0.2s;
 }
+
+.offer a :hover {
+    background-color: #750D3F;
+}
+
 header .container .wrapper .desktop {
     min-height: 400px;
+}
+
+main .promo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+ .promo h2 {
+    text-align: center;
+    font-family:'Cookie', cursive;
+    color: #A5366B; 
+    letter-spacing: 5px;
+    font-size: 36px;
+}
+
+.promo p {
+    text-align: center;
+    color: #696767;
+    margin-bottom: 20px;
+}
+
+.promo .promo.img {
+    min-height: 135px;
 }
