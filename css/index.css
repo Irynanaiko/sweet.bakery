@@ -3,6 +3,7 @@
 :root {
     font-family: 'Roboto', sans-serif;
     --main color: black;
+    --accent-color:#A5366B; 
 }
 
 h1, h2, p, ul {
@@ -14,19 +15,20 @@ body {
     max-width: 980px;
     margin: auto;
 }
-header .logo{
+/*header .logo{
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: center;*/
 }
 
-header .logo {
-    margin: 0;
+header nav .logo {
+    display: block;
+    /*margin: 0;
     font-family: 'Cookie', cursive;
     font-size: 4rem;
     color:  #A5366B;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 5px;*/
 }
 
 header nav .top-menu {
