@@ -2,12 +2,21 @@
 
 :root {
     font-family: 'Roboto', sans-serif;
-    --main color: black;
+    --main-color: black;
+    --accent-color:#A5366B; 
+    scroll-behavior: smooth;
 }
 
 h1, h2, p, ul {
     margin: 0;
     padding: 0;
+}
+h2{
+    color: var(--accent-color);
+    font-family: 'Cookie', cursive;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 5px;
 }
 
 body {
@@ -15,17 +24,14 @@ body {
     margin: auto;
 }
 
-header .logo {
-    margin: 0;
-    font-family: 'Cookie', cursive;
-    font-size: 4rem;
-    color:  #A5366B;
-    text-align: center;
-    letter-spacing: 5px;
+header .logo{
+    display: flex;
+    align-items: center;
 }
 
 header nav .top-menu {
     display: flex;
+    align-items: center;
     list-style-type: none;
     justify-content: space-around;
     margin-top: 15px;
@@ -37,15 +43,14 @@ header nav .top-menu li a {
     text-decoration: none;
     border-top: 2px solid transparent;
     padding: 5px;
+    font-weight: bold;
+}
+#cart{
+border-top: none;
 }
 
 header nav .top-menu li a:hover {
     border-top: 2px solid #A5366B;
-}
-
-header .cart{
-    display: flex;
-    justify-content: flex-end;
 }
 
 @media (min-width: 500px) {
@@ -55,4 +60,12 @@ header .cart{
     header nav .top-menu {
         flex: 1;
     }
+}
+
+header .wrapper {
+    background-image: url(../img/yellow.tart.jpeg);
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
