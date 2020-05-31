@@ -26,6 +26,7 @@ body {
 
 header .logo{
     display: flex;
+    max-width: 300px;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -38,6 +39,7 @@ header .logo img{
 
 header nav .top-menu {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     list-style-type: none;
     justify-content: space-around;
