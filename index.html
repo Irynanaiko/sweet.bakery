@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Sweet bakery</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="icon" href="img/logo.jpeg">
         <link rel="stylesheet" href="css/index.css">
     </head>
@@ -25,10 +26,12 @@
                         <a href="#shop">SHOP</a>
                     </li>
                     <li>
-                        <a href="#contact">CONTACT&nbsp;US</a>
+                        <a href="#contact">CONTACT &nbsp;US</a>
                     </li>
                     <li>
-                        <a id="cart" href="#cart"><img src="img/pinkcart.png" alt="cart"></a>
+                        <a id="cart" href="#cart">
+                            <img src="img/pinkcart.png" alt="cart">
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -40,7 +43,7 @@
                         <p class="intro">Sweet Bakery offers the best cakes and sweets for you.</p>
                         <a class="btn main" href="catalog.html">SHOP NOW</a>
                     </div>
-                    <img src="img/purpulcheescake.jpeg" alt="purpulcheescake" class="desktop">
+                    <img src="img/sweet.jpeg" alt="cupcakes with strawberry" class="desktop">
                 </div>
             </section>
         </header>
@@ -48,70 +51,97 @@
             <section class="promo">
                 <h2>Only Fresh Cakes</h2>
                 <p>All of our products are made from scratch using family recipes with only the highest quality ingredients.
-				We bake and sell fresh daily to ensure only the best products are sold to our customers.</p>
-                <img src="img/tart.jpeg" alt="Littel cakes" id="promo.img">
+                We bake and sell fresh daily to ensure only the best products are sold to our customers.</p>
+                <img src="img/tart.jpeg" alt="Littel cakes" class="promo-img">
             </section>
-           <!-- <section id="offer">
-                <h2>WHAT WE OFFER</h2>
-                <article id="offer.cards">
-                    <img src="img/party.cupcakes.jpeg" alt="partyy cupcakes" class="offer.img">
+            <h2>WHAT WE OFFER</h2>
+            <section class="offer">
+                <article class="offer-cards">
+                    <div>
+                        <img src="img/party.cupcakes.jpeg" alt="partyy cupcakes" class="offer-img">
+                    </div>
                     <h4>PARTY CUPCAKES</h4>
-                    <p>We provide a variety of cupcakes for any party made with high-quality natural ingredients and no
-						preservatives.</p>
-                    <button type="submit" class="read.more">READ MORE</button>
+                    <p>We provide a variety of cupcakes for any party made with high-quality natural ingredients and no preservatives.</p>
+                    <button type="submit" class="read.more" data-toggle="modal" data-target="#productInfoModal">BUY NOW</button>
+                    <p class="price">12.99$</p>
                 </article>
-                <article class="offer.cards">
-                    <img src="img/choko.cupcakes.jpeg" alt="choko cupcakes" class="offer.img">
+                <article class="offer-cards">
+                    <img src="img/choko.cupcakes.jpeg" alt="choko cupcakes" class="offer-img">
                     <h4>CHOKO CUPCAKES</h4>
-                    <p>We provide a variety of cupcakes for any party made with high-quality natural ingredients and no
-						preservatives.</p>
-                    <button type="submit" class="read.more">READ MORE</button>
+                    <p>We provide a variety of cupcakes for any party made with high-quality natural ingredients and no preservatives.</p>
+                    <button type="submit" class="read.more" data-toggle="modal" data-target="#productInfoModal">BUY NOW</button>
+                    <p class="price">10.99$</p>
                 </article>
-                <article class="offer.cards">
-                    <img src="img/wedding.cakes.jpeg" alt="wedding cakes" class="offer.img">
+                <article class="offer-cards">
+                    <img src="img/wedding.cakes.jpeg" alt="wedding cakes" class="offer-img">
                     <h4>WEDDING CAKES</h4>
-                    <p>We provide a variety of cupcakes for any party made with high-quality natural ingredients and no
-						preservatives.</p>
-                    <button type="submit" class="read.more">READ MORE</button>
+                    <p>We provide a variety of cupcakes for any party made with high-quality natural ingredients and no preservatives.</p>
+                    <button type="submit" class="read.more">BUY NOW</button>
+                    <p class="price">132.99$</p>
                 </article>
-                <article class="offer.cards">
-                    <img src="img/birthday.cakes.jpeg" alt="birthday cakes" class="offer.img">
+                <article class="offer-cards">
+                    <img src="img/birthday.cakes.jpeg" alt="birthday cakes" class="offer-img">
                     <h4>BIRTHDAY CAKES</h4>
-                    <p>We provide a variety of cupcakes for any party made with high-quality natural ingredients and no
-						preservatives.</p>
-                    <button type="submit" class="read.more">READ MORE</button>
+                    <p>We provide a variety of cupcakes for any party made with high-quality natural ingredients and no preservatives.</p>
+                    <button type="submit" class="read.more">BUY NOW</button>
+                    <p class="price">74.99$</p>
                 </article>
             </section>
-            <section id="products">
-                <h2>OUR PRODUCTS</h2>
-                <article class="catalog.cards">
+            <h2>OUR PRODUCTS</h2>
+            <section class="offer">
+                <article class="offer-cards">
                     <img src="img/macarons.jpeg" alt="macarons" class="product.img">
                     <h4>MACARONS</h4>
-                    <p>$ 9.99</p>
-                    <img src="img/cart.png" alt="cart">
+                    <p>$ 14.99</p>
+                    <img src="img/pinkcart.png" alt="cart">
                 </article>
-                <article class="catalog.cards">
+                <article class="offer-cards">
                     <img src="img/chocolate.truffels.jpeg" alt="chocolate truffels" class="product.img">
                     <h4>CHOCOLATE TRUFFELS</h4>
                     <p>$ 9.99</p>
-                    <img src="img/cart.png" alt="cart">
+                    <img src="img/pinkcart.png" alt="cart">
                 </article>
             </section>
-            <section id="order">
-                <img src="img/sweetcakes.jpeg" alt="sweet cakes" class="order.img">
-                <h2>ORDER  FRESH SWEETS</h2>
-                <p>Fill out the fields below, and we will contact you soon to take your order!</p>
-                <form class="form" action="https://formspree.io/xlepjdbq" method="POST">
-                    <input type="text" placeholder="Name" name="name" class="input" required>
-                    <input type="tel" placeholder="Phone number" name="phone" class="input" required>
-                    <button type="submit" class="btn btn-form">I want it!</button>
-                </form>
-            </section>-->
+            <section class="order">
+                <img src="img/sweetcupcakes.jpeg" alt="sweet cakes" class="order-img">
+                <div class="order-input">
+                    <h2 class="order-sweets">ORDER  FRESH SWEETS</h2>
+                    <p>Fill out the fields below, and we will contact you soon to take your order!</p>
+                    <form class="form" action="https://formspree.io/xlepjdbq" method="POST">
+                        <input type="text" placeholder="Name" name="name" class="input" required>
+                        <input type="tel" placeholder="Phone number" name="phone" class="input" required>
+                        <button type="submit" class="btn-form">I want it!</button>
+                    </form>
+                </div>
+            </section>
         </main>
-       <!-- <footer>
+        <footer>
             <p>© 2020. Sweet Bakery. All Rights Reserved. Privacy Policy.</p>
-        </footer>-->
+        </footer>
+        <!-- Modal -->
+    <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+             <div class="modal-content">
+                <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">OUR PRODUCTS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                     </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/party.cupcakes.jpeg" alt="partyy cupcakes" class="offer-img">
+                    <h4>PARTY CUPCAKES</h4>
+                    <p class="price">12.99$</p>
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </body>
 </html>
-
-

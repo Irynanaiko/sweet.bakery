@@ -1,96 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Sweet bakery</title>
-	<link rel="icon" href="img/logo.jpeg">
-    <link rel="stylesheet" href="css/catalog.css">
-</head>
-<body>
-	<header>
-		    <nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sweet bakery</title>
+        <link rel="icon" href="img/logo.jpeg">
+        <link rel="stylesheet" href="css/catalog.css">
+    </head>
+    <body>
+        <header>
+            <nav>
                 <div class="logo">
-			        <img src="img/logo.jpeg" alt="logo sweet bakery">
+                    <img src="img/logo.jpeg" alt="logo sweet bakery">
                 </div>
-				<ul class="top-menu">
-					<li>
-						<a href="index.html">HOME</a>
-					</li>
-					<li>
-						<a href="#galerry">GALLERY</a>
-					</li>
-					<li>
-						<a href="#shop">SHOP</a>
-					</li>
-					<li>
-						<a href="#contact">CONTACT&nbsp;US</a>
-					</li>
-					<li>
-						<a id="cart" href="#cart"><img src="img/pinkcart.png" alt="cart"></a>
-					</li>
-				</ul>
-			</nav>
-			<div class="wrapper">
-				<h1>GRID SHOP</h1>
-			</div>
-	</header>
-	<!--<aside id="aside.form">
-		<h5>FILTER BY PRICE</h5>
-		<div class="price">
-			$0<input type="range" id="price" name="price" min="0" max="635" step="10" value="0">$635
+                <ul class="top-menu">
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#galerry">GALLERY</a>
+                    </li>
+                    <li>
+                        <a href="#shop">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTACT &nbsp;US</a>
+                    </li>
+                    <li>
+                        <a id="cart" href="#cart">
+                            <img src="img/pinkcart.png" alt="cart">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="wrapper">
+                <h1>GRID SHOP</h1>
+            </div>
+        </header>
+        <div class="shop-content">
+            <aside class="aside-form">
+                <h5>FILTER BY PRICE</h5>
+                <hr>
+                <div class="price">
+                    $0<input type="range" id="price" name="price" min="0" max="635" step="10" value="0">
+                    $635
 			<label for="price">Price</label>
-		</div>
-		<div id="categories">
-			<h5>CATEGORIES</h5>
-			<label> <input type="checkbox" name="personality">All</label>
-			<label> <input type="checkbox" name="personality">Cakes</label>
-			<label> <input type="checkbox" name="personality">Puddings</label>
-			<label> <input type="checkbox" name="personality">Sweets</label>
-		</div>
-	</aside>
-	<main>
-		<p>Showing 1-9 of 28 results</p>
-		<section class="catalog.products">
-			<img src="img/chocolate.tart.jpeg" alt="chocolate tart">
-			<h4>CHOCOLATE TART</h4>
-			<p>32$</p>
-			<img src="img/cart.png" alt="cart">
-        </section>
-		<section class="catalog.products">
-				<img src="img/cookies.jpeg" alt="white cookies">
-				<h4>COOKIES</h4>
-				<p>12$</p>
-				<img src="img/cart.png" alt="cart">
-        </section>
-		<section class="catalog.products">
-				<img src="img/crumbscake.jpeg" alt="crumbs cake">
-				<h4>CRUMBS CAKE</h4>
-				<p>62$</p>
-				<img src="img/cart.png" alt="cart">
-        </section>
-		<section class="catalog.products">
-				<img src="img/fruittart.jpeg" alt="fruit tart">
-				<h4>FRUIT TART</h4>
-				<p>28$</p>
-				<img src="img/cart.png" alt="cart">
-        </section>
-		<section class="catalog.products">
-				<img src="img/lemon.cupcake.jpeg" alt="lemon cupcake">
-				<h4>LEMON CUPCAKE</h4>
-				<p>9.99$</p>
-				<img src="img/cart.png" alt="cart">
-        </section>
-		<section class="catalog.products">
-				<img src="img/rainbow.cupcake.jpeg" alt="rainbow cupcake">
-				<h4>RAINBOW CUPCAKE</h4>
-				<p>12.99$</p>
-				<img src="img/cart.png" alt="cart">
-        </section>-->
-	</main>
-	<!--<footer>
-		<p>© 2020. Sweet Bakery. All Rights Reserved. Privacy Policy.</p>
-	</footer>-->
-</body>
+                </div>
+                <div id="categories">
+                    <h5>CATEGORIES</h5>
+                    <hr>
+                    <label>
+                        <input type="checkbox" name="personality">All
+                    </label>
+                    <label>
+                        <input type="checkbox" name="personality">Cakes
+                    </label>
+                    <label>
+                        <input type="checkbox" name="personality">Puddings
+                    </label>
+                    <label>
+                        <input type="checkbox" name="personality">Sweets
+                    </label>
+                </div>
+            </aside>
+            <main>
+                <p>Showing 1-9 of 28 results</p>
+                <div class="catalog-list">
+                    <section class="catalog-products">
+                        <img src="img/chocolate.tart.jpeg" alt="chocolate tart">
+                        <h4>CHOCOLATE TART</h4>
+                        <p>32$</p>
+                        <button class="btn-catalog">
+                            <img src="img/whitecart.png" alt="cart">
+                        </button>
+                    </section>
+                    <section class="catalog-products">
+                        <img src="img/cookies.jpeg" alt="white cookies">
+                        <h4>COOKIES</h4>
+                        <p>12$</p>
+                        <button class="btn-catalog">
+                            <img src="img/whitecart.png" alt="cart">
+                        </button>
+                    </section>
+                    <section class="catalog-products">
+                        <img src="img/crumbscake.jpeg" alt="crumbs cake">
+                        <h4>CRUMBS CAKE</h4>
+                        <p>62$</p>
+                        <button class="btn-catalog">
+                            <img src="img/whitecart.png" alt="cart">
+                        </button>
+                    </section>
+                    <section class="catalog-products">
+                        <img src="img/fruittart.jpeg" alt="fruit tart">
+                        <h4>FRUIT TART</h4>
+                        <p>28$</p>
+                        <button class="btn-catalog">
+                            <img src="img/whitecart.png" alt="cart">
+                        </button>
+                    </section>
+                    <section class="catalog-products">
+                        <img src="img/lemon.cupcake.jpeg" alt="lemon cupcake">
+                        <h4>LEMON CUPCAKE</h4>
+                        <p>9.99$</p>
+                        <button class="btn-catalog">
+                            <img src="img/whitecart.png" alt="cart">
+                        </button>
+                    </section>
+                    <section class="catalog-products">
+                        <img src="img/rainbow.cupcake.jpeg" alt="rainbow cupcake">
+                        <h4>RAINBOW CUPCAKE</h4>
+                        <p>12.99$</p>
+                        <button class="btn-catalog">
+                            <img src="img/whitecart.png" alt="cart">
+                        </button>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <p>© 2020. Sweet Bakery. All Rights Reserved. Privacy Policy.</p>
+        </footer>
+    </body>
 </html>

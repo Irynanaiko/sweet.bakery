@@ -78,3 +78,61 @@ header .wrapper {
     justify-content: center;
     align-items: center;
 }
+
+@media (min-width: 500px){
+   .shop-content {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      margin-top: 40px;
+    }
+}
+
+hr {
+    color:  #696767;
+    width: 160px;
+    margin: 0;
+}
+
+.price {
+    margin-top: 30px;
+}
+
+#categories {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.catalog-products {
+    display: block;
+    max-width: 400px;
+    padding: 20px 40px 20px 40px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    border-radius: 10px;
+}
+
+.btn-catalog {
+    border-radius: 100px;
+    background-color: #A5366B;
+    border: none;
+    
+}
+
+@media (min-width: 500px) {
+    .catalog-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+footer {
+    background-color: #EAC4D6;
+    height: 45px;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
