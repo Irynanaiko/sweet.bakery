@@ -174,7 +174,7 @@ background-color: #ffffff;
 color: #696767;
 text-decoration: underline;
 margin-top: 10px;
-padding: 10px 10;
+padding: 10px 10px;
 } 
 .offer-cards button:hover {
     border: 1px solid #696767;
@@ -218,6 +218,10 @@ padding: 10px 10;
  background-color: #F9F6F6;
 }
 
+textarea:focus, input:focus {
+    outline: none; 
+}
+
 .order button {
  color: #ffffff;
  background:#A5366B ;
@@ -256,11 +260,79 @@ footer {
     height: 45px;
     padding-top: 10px;
 }
-.btn-primary {
-    background-color: #A5366B;
-    border: none;
+
+/* Sale countdown*/
+.summer-sale {
+    box-sizing: border-box;
+    background-image: url(https://images.unsplash.com/photo-1551404973-761c83cd8339?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 10px;
 }
 
-.btn-primary:hover {
-    background-color: #750D3F; 
+.sale-title {
+    font-family: 'Cookie', cursive;
+    color: #696767;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 5px;
+    padding-top: 30px;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    height: 300px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  padding-bottom: 100px;
+}
+
+.time h2 {
+  margin: 0 0 5px;
+}
+
+.btn-sale  a {
+ text-align: center;
+ color: #ffffff;
+ background:#A5366B ;
+ display: block;
+ margin: 0 auto;
+ width: 135px;
+ height: 40px;
+ border-radius: 10px;
+ text-decoration: none; 
+ font-weight: 900;
+ transition: all 0.2s; 
+ border: none;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  .time {
+    margin: 5px;
+  }
+
+  .time h2 {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .time small {
+    font-size: 10px;
+  }
 }

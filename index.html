@@ -23,7 +23,7 @@
                         <a href="#galerry">GALLERY</a>
                     </li>
                     <li>
-                        <a href="#shop">SHOP</a>
+                        <a href="catalog.html">SHOP</a>
                     </li>
                     <li>
                         <a href="#contact">CONTACT &nbsp;US</a>
@@ -41,7 +41,7 @@
                         <h1 class="title">Delicions</h1>
                         <h4 class="text">CAKE FOR YOU</h4>
                         <p class="intro">Sweet Bakery offers the best cakes and sweets for you.</p>
-                        <a class="btn main" href="catalog.html">SHOP NOW</a>
+                        <a id="btn" class="btn main" href="catalog.html">SHOP NOW</a>
                     </div>
                     <img src="img/sweet.jpeg" alt="cupcakes with strawberry" class="desktop">
                 </div>
@@ -54,6 +54,32 @@
                 We bake and sell fresh daily to ensure only the best products are sold to our customers.</p>
                 <img src="img/tart.jpeg" alt="Littel cakes" class="promo-img">
             </section>
+            <!--Sale countdown-->
+            <div class="summer-sale">
+                <div id="year" class="year"></div>
+                <h1 class="sale-title">SUMMER SALE</h1>
+                <div id="countdown" class="countdown">
+                    <div class="time">
+                        <h2 id="days">00</h2>
+                        <small>days</small>
+                    </div>
+                    <div class="time">
+                        <h2 id="hours">00</h2>
+                        <small>hours</small>
+                    </div>
+                    <div class="time">
+                        <h2 id="minutes">00</h2>
+                        <small>minutes</small>
+                    </div>
+                    <div class="time">
+                        <h2 id="seconds">00</h2>
+                        <small>seconds</small>
+                    </div>
+                </div>
+                <div class="btn-sale">
+                    <a href="catalog.html">BUY NOW</a>
+                </div>
+            </div>
             <h2>WHAT WE OFFER</h2>
             <section class="offer">
                 <article class="offer-cards">
@@ -119,29 +145,31 @@
             <p>© 2020. Sweet Bakery. All Rights Reserved. Privacy Policy.</p>
         </footer>
         <!-- Modal -->
-    <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-             <div class="modal-content">
-                <div class="modal-header">
-                     <h5 class="modal-title" id="exampleModalLabel">OUR PRODUCTS</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                     </button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/party.cupcakes.jpeg" alt="partyy cupcakes" class="offer-img">
-                    <h4>PARTY CUPCAKES</h4>
-                    <p class="price">12.99$</p>
-                </div>
-                <div class="modal-footer">
-                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Add to cart</button>
+        <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">OUR PRODUCTS</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/party.cupcakes.jpeg" alt="partyy cupcakes" class="offer-img">
+                        <h4>PARTY CUPCAKES</h4>
+                        <p class="price">12.99$</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add to cart</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
+
