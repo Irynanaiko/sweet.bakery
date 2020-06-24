@@ -105,11 +105,14 @@ hr {
 
 .catalog-products {
     display: block;
-    max-width: 400px;
+    max-width: 350px;
     padding: 20px 40px 20px 40px;
     margin-top: 20px;
     box-sizing: border-box;
     text-align: center;
+}
+
+    .catalog-products:hover {
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
     border-radius: 10px;
 }

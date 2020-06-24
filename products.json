@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "title": "PARTY CUPCAKES",
+        "image": "party.cupcakes.jpeg",
+        "description": "We provide a variety of cupcakes for any party made with high-quality natural ingredients and no preservatives.",
+        "price": 12.99
+    },
+    {
+        "id": "2",
+        "title": "CHOKO CUPCAKES",
+        "image": "choko.cupcakes.jpeg",
+        "description": "We provide a variety of cupcakes for any party made with high-quality natural ingredients and no preservatives.",
+        "price": 10.99
+    },
+    {
+        "id": "3",
+        "title": "WEDDING CAKES",
+        "image": "wedding.cakes.jpeg",
+        "description": "We provide a variety of cupcakes for any party made with high-quality natural ingredients and no preservatives.",
+        "price": 124.99
+    },
+    {
+        "id": "4",
+        "title": "BIRTHDAY CAKES",
+        "image": "birthday.cakes.jpeg",
+        "description": "We provide a variety of cupcakes for any party made with high-quality natural ingredients and no preservatives.",
+        "price": 89.99
+    }
+]

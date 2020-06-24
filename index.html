@@ -28,11 +28,17 @@
                     <li>
                         <a href="#contact">CONTACT &nbsp;US</a>
                     </li>
-                    <li>
+                    <div>
+                        <a class="nav-link openCartLink" href="#modal-cart" data-toggle="modal">
+                          <i class="fas fa-shopping-cart"></i><img src="img/pinkcart.png" alt="cart">
+                            <span id="cart-badge" class="badge badge-light"></span>
+                        </a>
+                    </div>
+                  <!--  <li>
                         <a id="cart" href="#cart">
                             <img src="img/pinkcart.png" alt="cart">
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
             <section class="container">
@@ -81,7 +87,7 @@
                 </div>
             </div>
             <h2>WHAT WE OFFER</h2>
-            <section class="offer">
+    <!--<section class="offer">
                 <article class="offer-cards">
                     <div>
                         <img src="img/party.cupcakes.jpeg" alt="partyy cupcakes" class="offer-img">
@@ -112,6 +118,14 @@
                     <button type="submit" class="read.more">BUY NOW</button>
                     <p class="price">74.99$</p>
                 </article>
+            </section>-->
+            
+            <!--Products section-->
+            <section>
+                <h2 id="products">Products</h2>
+                <div class="row products-container">
+                   <!--Products are dynamically generated here-->
+                </div>
             </section>
             <h2>OUR PRODUCTS</h2>
             <section class="offer">
@@ -144,7 +158,7 @@
         <footer>
             <p>© 2020. Sweet Bakery. All Rights Reserved. Privacy Policy.</p>
         </footer>
-        <!-- Modal -->
+        <!-- Modal product info-->
         <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -155,9 +169,9 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <img src="img/party.cupcakes.jpeg" alt="partyy cupcakes" class="offer-img">
-                        <h4>PARTY CUPCAKES</h4>
-                        <p class="price">12.99$</p>
+                        <img class="card-img-top" src="" alt="">
+                        <h4 class="card-title"></h4>
+                        <p class="card-text"></p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -166,10 +180,50 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal Cart -->
+    <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cartLabel">Cart</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="cart-product-list-container"></div>
+              <hr>
+              <div class="container">
+                <form class="form-contacts">
+                  <div class="form-group row">
+                    <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                    <input class="form-control col-8" type="text" id="client-name" required>
+                  </div>
+                  <div class="form-group row">
+                    <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                    <input class="form-control col-8" type="email" id="client-email" required>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+              <button class="btn btn-primary order">Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        <script src="js/index.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+
+    <script async src="js/alert-window.js"></script>
+    <script defer src="js/products-service.js"></script>
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/product-list.js"></script> 
+    <script defer src="js/index.js"></script>   
     </body>
 </html>
 

@@ -7,7 +7,7 @@ const year = document.getElementById("year");
 
 const currentDate = new Date().getFullYear();
 
-const saleTime = new Date(`June 18 ${currentDate} 10:00:00`);
+const saleTime = new Date(`July 18 ${currentDate} 10:00:00`);
 
 // Update countdown time
 function updateCountdown() {
@@ -28,3 +28,6 @@ function updateCountdown() {
 
 // Run every second
 setInterval(updateCountdown, 1000);
+
+// Add to cart
+new ProductList(new Cart());
